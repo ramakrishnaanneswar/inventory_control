@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — Inventory Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container">
+      <a class="brand" href="index.html">Inventory<span>Manager</span></a>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="container auth-grid">
+      <div class="card auth-card">
+        <h2>Create account</h2>
+        <form id="registerForm">
+          <label>Full name
+            <input type="text" id="name" required placeholder="Your name">
+          </label>
+          <label>Email
+            <input type="email" id="email" required placeholder="you@example.com">
+          </label>
+          <label>Password
+            <input type="password" id="password" required minlength="6" placeholder="Min 6 characters">
+          </label>
+          <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+        <p class="muted">Already have an account? <a href="login.html">Sign in</a></p>
+      </div>
+
+      <div class="card auth-info">
+        <h3>Why local accounts?</h3>
+        <p>This demo saves accounts into <code>localStorage</code>. It's simple, private (stored in your browser), and perfect for testing. No server required.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>

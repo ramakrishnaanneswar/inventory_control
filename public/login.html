@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Inventory Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container">
+      <a class="brand" href="index.html">Inventory<span>Manager</span></a>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="container auth-grid">
+      <div class="card auth-card">
+        <h2>Sign in</h2>
+        <form id="loginForm">
+          <label>Email
+            <input type="email" id="email" required placeholder="you@example.com">
+          </label>
+          <label>Password
+            <input type="password" id="password" required placeholder="Your password">
+          </label>
+          <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+        <p class="muted">No account? <a href="register.html">Register</a></p>
+      </div>
+
+      <div class="card auth-info">
+        <h3>Tip</h3>
+        <p>Use a real-looking email for demonstration. Passwords are stored in plain text in this demo (for simplicity). Do not use real credentials.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
