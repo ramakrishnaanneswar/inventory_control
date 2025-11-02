@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Inventory Demo App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <nav class="topbar container">
+    <div>
+      <strong>Inventory Demo</strong>
+    </div>
+    <div id="userArea"></div>
+  </nav>
+
+  <div class="container main-grid">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#" data-view="dashboard">Dashboard</a></li>
+        <li><a href="#" data-view="products">Products</a></li>
+        <li><a href="#" data-view="orders">Orders</a></li>
+        <li><a href="#" data-view="warehouses">Warehouses</a></li>
+        <li><a href="#" data-view="reports">Reports</a></li>
+      </ul>
+    </aside>
+
+    <section class="panel" id="appRoot">
+      <!-- dynamic content -->
+    </section>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

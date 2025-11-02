@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": "P101",
+      "name": "HP Laptop",
+      "category": "Electronics",
+      "quantity": 12,
+      "price": 55000,
+      "reorder": 5
+    },
+    {
+      "id": "P102",
+      "name": "Logitech Mouse",
+      "category": "Accessories",
+      "quantity": 150,
+      "price": 799,
+      "reorder": 20
+    },
+    {
+      "id": "P103",
+      "name": "Stationery Pack",
+      "category": "Office",
+      "quantity": 40,
+      "price": 199,
+      "reorder": 10
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD1290",
+      "date": "2025-10-28",
+      "customer": "Ravi Traders",
+      "items": [
+        {
+          "pid": "P101",
+          "q": 1
+        }
+      ],
+      "total": 55000
+    },
+    {
+      "id": "ORD1291",
+      "date": "2025-10-29",
+      "customer": "Sita Store",
+      "items": [
+        {
+          "pid": "P102",
+          "q": 10
+        }
+      ],
+      "total": 7990
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "W1",
+      "name": "Main Warehouse",
+      "location": "Hyderabad",
+      "stock_value": "\u20b98,50,000"
+    },
+    {
+      "id": "W2",
+      "name": "Secondary",
+      "location": "Vijayawada",
+      "stock_value": "\u20b93,75,000"
+    }
+  ]
+}

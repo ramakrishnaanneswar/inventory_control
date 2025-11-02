@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Inventory management software designed for Indian businesses</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Inventory management software designed for Indian businesses</h1>
+      <p>Manage orders. Track inventory. Handle GST billing. Oversee warehouses.</p>
+      <div class="buttons">
+        <a class="btn" href="app.html">Try Demo</a>
+        <button id="signinBtn" class="btn outline">Sign In</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container content">
+    <section>
+      <h2>One place to run all your inventory operations</h2>
+      <p>Simple, offline-capable demo that runs entirely in your browser.</p>
+    </section>
+    <section class="features">
+      <div class="card">
+        <h3>Products</h3>
+        <p>Add, edit and search products.</p>
+      </div>
+      <div class="card">
+        <h3>Orders</h3>
+        <p>Create sales and purchase orders, and export invoices.</p>
+      </div>
+      <div class="card">
+        <h3>Warehouses & GST</h3>
+        <p>Track per-warehouse stock and demo GST invoice formatting.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>Built as a demo clone — not the original product.</small>
+  </footer>
+
+  <!-- Sign in modal -->
+  <div id="signinModal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <h3>Sign In (demo)</h3>
+      <p>Enter any username to continue to the demo.</p>
+      <input id="username" placeholder="Username" />
+      <div style="margin-top:10px">
+        <button id="continueBtn" class="btn">Continue</button>
+        <button id="closeModal" class="btn outline">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('signinBtn').onclick = function(){ document.getElementById('signinModal').style.display='flex'; }
+    document.getElementById('closeModal').onclick = function(){ document.getElementById('signinModal').style.display='none'; }
+    document.getElementById('continueBtn').onclick = function(){
+      var u = document.getElementById('username').value || 'demo';
+      localStorage.setItem('inventory_user', u);
+      location.href = 'app.html';
+    }
+  </script>
+</body>
+</html>
